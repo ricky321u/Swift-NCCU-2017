@@ -33,8 +33,7 @@ let books : [[String: String]] = [
     ["author": "王宣一", "title": "國宴與家宴", "price": "7.99"],
 ]
 
-func distinctAuthors() -> [String] {
-}
+
 
 /*:
  
@@ -49,20 +48,48 @@ func distinctAuthors() -> [String] {
  If the index is out of bound, return `nil`.
  
  */
+func distinctAuthors() -> Set<String> {
+    var setAuthor = Set<String>()
+    var authorName = [String]()
+    for booksName in books{
+        authorName.append(booksName["author"]!)
+    }
+    
+    setAuthor = Set(authorName)
+    return setAuthor
+}
 
-// Use this
-//func distinctAuthors() -> Set<String> { ... }
-// or this
-//func distinctAuthors() -> [String] { ... }
-// then
+distinctAuthors()
 //bookStore.setDataSource(authorsGetter: distinctAuthors)
 
-//func totalBookPrice() -> Double { ... }
+func totalBookPrice() -> Double {
+    var price = Double()
+    
+    for booksPrice in books{
+        price += Double(booksPrice["price"]!)!
+    }
+    return price
+}
+totalBookPrice()
+
 //bookStore.setDataSource(priceCalculator: totalBookPrice)
 
-//func getBook(at index: Int) -> (title: String, author: String, price: Double)? { return nil }
-//bookStore.setDataSource(bookGetter: getBook(at:))
+func getBook(at index: Int) -> (title: String, author: String, price: Double)? {
+    if index > books.count{
+        return nil
+    }else{
+    var booksIndex = books[index]
+        return (title: booksIndex["title"]!, author: booksIndex["author"]!, price: Double(booksIndex["String"]!)!)
+    }
+}
 
+
+//bookStore.setDataSource(bookGetter: getBook(at:))
+/*let bookindex = Int()
+for _ in books{
+    if bookindex > books.count
+    { return nil}
+}*/
 /*:
 
  Finally, let's show the book store shopping cart:
