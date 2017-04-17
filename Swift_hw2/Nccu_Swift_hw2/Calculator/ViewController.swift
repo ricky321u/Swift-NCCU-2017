@@ -137,6 +137,11 @@ class ViewController: UIViewController {
         }
     }
 
+    
+    @IBAction func pi(_ sender: UIButton) {
+        
+        self.displayLabel.text = String ( Float.pi)
+    }
     @IBAction func sqrt(_ sender: UIButton) {
         let sqrtans = Double (self.displayLabel.text!)
         

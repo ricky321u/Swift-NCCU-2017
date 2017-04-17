@@ -380,7 +380,7 @@
                                 </variation>
                             </label>
                             <button opaque="NO" tag="1103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3M7-AS-s59">
-                                <rect key="frame" x="10" y="220" width="103" height="103"/>
+                                <rect key="frame" x="57" y="224" width="56" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82306637422266915" green="0.83173023079343411" blue="0.83173023079343411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="X">
@@ -423,8 +423,19 @@
                                     <action selector="operatorButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IZu-20-oON"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G97-bM-z2w">
+                                <rect key="frame" x="0.0" y="274" width="56" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69748320110103623" green="0.70482512953367871" blue="0.70482512953367871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="π">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pi:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2fp-Gl-I0O"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h82-Tm-CKm">
-                                <rect key="frame" x="10" y="120" width="103" height="102"/>
+                                <rect key="frame" x="0.0" y="220" width="56" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.79904064119170981" green="0.79904064119170981" blue="0.79904064119170981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sqrt">
