@@ -413,7 +413,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1104" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o6O-MB-9Tb">
-                                <rect key="frame" x="111" y="220" width="103" height="103"/>
+                                <rect key="frame" x="163" y="275" width="51" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.82306637422266915" green="0.83173023079343411" blue="0.83173023079343411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="/">
@@ -443,6 +443,17 @@
                                 </state>
                                 <connections>
                                     <action selector="sqrt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WCN-le-z3i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXW-gK-UMp">
+                                <rect key="frame" x="112" y="276" width="52" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.72109716543879532" green="0.72868766191709844" blue="0.72868766191709844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="x^y">
+                                    <color key="titleColor" red="0.017705466051381701" green="0.01789183937823835" blue="0.01789183937823835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="xysquare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MSG-xw-uUv"/>
                                 </connections>
                             </button>
                         </subviews>

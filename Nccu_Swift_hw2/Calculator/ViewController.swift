@@ -137,7 +137,15 @@ class ViewController: UIViewController {
         }
     }
 
-    
+    @IBAction func xysquare(_ sender: UIButton) {
+        let ans = Double (self.displayLabel.text!)
+        
+        let ans1 = Double (self.displayLabel.text!)
+        
+        try! self.core.addStep(ans!)
+
+        self.displayLabel.text = String (Darwin.pow(ans!,ans1!))
+    }
     @IBAction func pi(_ sender: UIButton) {
         
         self.displayLabel.text = String ( Float.pi)
@@ -146,7 +154,7 @@ class ViewController: UIViewController {
         let sqrtans = Double (self.displayLabel.text!)
         
         self.displayLabel.text = String (Darwin.sqrt(sqrtans!))
-
+        
     }
     
     @IBAction func percentButtonClicked(_ sender: UIButton) {
